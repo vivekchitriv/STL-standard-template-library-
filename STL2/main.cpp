@@ -14,7 +14,8 @@ using namespace std;
 
 int main()
 {
-	vector<int> ar={1,2,3,4,5,6};
+	vector<int> ar = {1,2,3,4,5,6};
+	vector<int> ar1 = {10,20,30,40};
 	//declaring iterator to a vector
 /*	vector<int> :: iterator ptr;
 	cout<<"Vector elements are::"<<endl;
@@ -32,7 +33,7 @@ int main()
 
 	//using next() and prev()
 
-	vector<int>::iterator ptr = ar.begin();
+	/*vector<int>::iterator ptr = ar.begin();
 	vector<int>::iterator ftr = ar.end();
 
 	auto it = next(ptr,3);
@@ -48,6 +49,19 @@ int main()
 	    cout << "The position of new iterator using prev()  is : ";
 	    cout << *it1 << " ";
 	    cout << endl;
+*/
+
+
+	//using inserter
+
+	vector<int> :: iterator ptr = ar.begin();
+	advance(ptr,4);
+
+	copy(ar1.begin(),ar1.end(),inserter(ar,ptr));
+	cout<<"The new vector after inserting elements is :"<<endl;
+	for(int &x : ar)
+		cout<<x<<" ";
+
 
 	return 0;
 }
