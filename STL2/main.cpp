@@ -23,11 +23,31 @@ int main()
 		cout<<*ptr<<" ";*/
 		//using advance iterator method
 
+/*
 	vector<int>::iterator ptr = ar.begin();
 	advance(ptr,3);
 	cout<<" the position of iterator after advancing it:"<<endl;
 	cout<<*ptr<<" ";
+*/
 
+	//using next() and prev()
+
+	vector<int>::iterator ptr = ar.begin();
+	vector<int>::iterator ftr = ar.end();
+
+	auto it = next(ptr,3);
+
+	auto it1 = prev(ftr,3);
+
+	// Displaying iterator position
+	    cout << "The position of new iterator using next() is : ";
+	    cout << *it << " ";
+	    cout << endl;
+
+	    // Displaying iterator position
+	    cout << "The position of new iterator using prev()  is : ";
+	    cout << *it1 << " ";
+	    cout << endl;
 
 	return 0;
 }
