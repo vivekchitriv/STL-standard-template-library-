@@ -5,14 +5,11 @@
  *      Author: sunbam
  */
 #include<iostream>
-#include "student.h"
-using namespace std;
-student::student() {
-	// TODO Auto-generated constructor stub
-cout<<"hello sir";
+
+void student()
+{
+	std::cout<<"hello";
 }
 
-student::~student() {
-	// TODO Auto-generated destructor stub
-}
+
 
