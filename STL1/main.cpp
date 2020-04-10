@@ -42,6 +42,8 @@ int main()
 	printf("hello and welcome to my code");
 	printf("this is develoer 2");
 
+	printf("this addedd by dev1");
+
 	return 0;
 }
 
