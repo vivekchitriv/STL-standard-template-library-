@@ -112,7 +112,8 @@ int main()
 	    cout << "\nVector 2: ";
 	    for (int i = 0; i < v2.size(); i++)
 	        cout << v2[i] << " ";
-
+	    v.push_back(15);
+	    v.push_back(20);
 
 	return 0;
 }
