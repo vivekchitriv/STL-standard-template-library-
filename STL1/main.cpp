@@ -39,6 +39,8 @@ int main()
 	for(int i=0;i<5;i++)
 				cout<<arr1[i]<<" ";
 
+	printf("hello and welcome to my code");
+	printf("this is develoer 2");
 
 	return 0;
 }
