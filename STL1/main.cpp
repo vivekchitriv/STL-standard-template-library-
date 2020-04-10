@@ -10,6 +10,11 @@ int increment(int x)
 {
 	return (x+1);
 }
+
+void m4()
+{
+	printf("hello");
+}
 int main()
 {
 	//without using transform function
